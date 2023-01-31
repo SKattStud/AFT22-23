@@ -1,0 +1,16 @@
+{
+    "Settings": [
+        {
+            "curie_temp" : 1042.15,
+            "epsilon" : 0.36,
+            "csp" : 477,
+            "m" : 0.0094,
+            "A" : 0.0014,
+            "dt" : 1,
+            "Pzu" : 500,
+            "eta_before" : 0.5,
+            "curie_factor" : 0.5,
+            "Tinit" : 293.15
+        }
+    ]
+}
