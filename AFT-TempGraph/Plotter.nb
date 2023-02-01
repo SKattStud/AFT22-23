@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12346,        300]
-NotebookOptionsPosition[     11751,        282]
-NotebookOutlinePosition[     12165,        298]
-CellTagsIndexPosition[     12122,        295]
+NotebookDataLength[     13694,        336]
+NotebookOptionsPosition[     13108,        318]
+NotebookOutlinePosition[     13513,        334]
+CellTagsIndexPosition[     13470,        331]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -75,7 +75,23 @@ Cell[BoxData[{
     RowBox[{"{", 
      RowBox[{"\"\<Abs. Temp in K\>\"", ",", "\"\<Zeit in sek\>\""}], "}"}]}], 
    ",", 
-   RowBox[{"ImageSize", "\[Rule]", "500"}]}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"ImageSize", "\[Rule]", "500"}], ",", " ", 
+   RowBox[{"Epilog", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Line", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", " ", "1042.15"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Ceiling", "[", 
+           RowBox[{"Max", "[", 
+            RowBox[{"data", "[", 
+             RowBox[{"[", 
+              RowBox[{"All", ",", "1"}], "]"}], "]"}], "]"}], "]"}], ",", 
+          "1042.15"}], "}"}]}], "}"}], "]"}], "}"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"ListLinePlot", "[", 
    RowBox[{"dataalt", ",", " ", 
@@ -111,7 +127,23 @@ Cell[BoxData[{
      RowBox[{"{", 
       RowBox[{"\"\<Abs. Temp in K\>\"", ",", "\"\<Zeit in sek\>\""}], "}"}]}],
      ",", 
-    RowBox[{"ImageSize", "\[Rule]", "500"}]}], "]"}], 
+    RowBox[{"ImageSize", "\[Rule]", "500"}], ",", " ", 
+    RowBox[{"Epilog", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"Line", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", " ", "1042.15"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Ceiling", "[", 
+            RowBox[{"Max", "[", 
+             RowBox[{"dataalt", "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "1"}], "]"}], "]"}], "]"}], "]"}], ",", 
+           "1042.15"}], "}"}]}], "}"}], "]"}], "}"}]}]}], "]"}], 
+  "\[IndentingNewLine]", 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.8841921667310658`*^9, 3.884192219992233*^9}, {
   3.8841923291098223`*^9, 3.884192372423724*^9}, {3.8841924146613083`*^9, 
@@ -120,9 +152,9 @@ Cell[BoxData[{
   3.88419265362247*^9}, {3.8841931335089626`*^9, 3.8841931625942745`*^9}, {
   3.884193420462558*^9, 3.8841935410895557`*^9}, {3.8841935993804736`*^9, 
   3.884193734071432*^9}, {3.8841951235310893`*^9, 3.884195129341077*^9}, {
-  3.8841951984200144`*^9, 3.884195236078087*^9}},
- CellLabel->
-  "In[152]:=",ExpressionUUID->"7bbc8f2c-f9ca-4b10-a4e8-62f9a24a5628"],
+  3.8841951984200144`*^9, 3.884195236078087*^9}, {3.884200372472852*^9, 
+  3.8842004497636538`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"7bbc8f2c-f9ca-4b10-a4e8-62f9a24a5628"],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{}, {}, 
@@ -161,6 +193,8 @@ DFRQL0NzUjP3/mnqZeB2rO6oqaF+F5ps6id4X1Xjf6Xp0Pg=
     FormBox["\"Zeit in sek\"", TraditionalForm]},
   AxesOrigin->{0, 0},
   DisplayFunction->Identity,
+  Epilog->{
+    LineBox[{{0, 1042.15}, {100, 1042.15}}]},
   Frame->{{False, False}, {False, False}},
   FrameLabel->{{None, None}, {None, None}},
   FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
@@ -198,9 +232,9 @@ DFRQL0NzUjP3/mnqZeB2rO6oqaF+F5ps6id4X1Xjf6Xp0Pg=
    3.8841935326883345`*^9}, {3.8841936067972093`*^9, 3.884193652611437*^9}, {
    3.8841937099016514`*^9, 3.8841937355243835`*^9}, 3.884195038065632*^9, {
    3.8841951206140385`*^9, 3.8841951300676355`*^9}, {3.8841952039158983`*^9, 
-   3.8841952372521195`*^9}},
- CellLabel->
-  "Out[154]=",ExpressionUUID->"4eb1e338-fe50-41fd-8305-2099e1d2ca76"],
+   3.8841952372521195`*^9}, 3.884200349698042*^9, {3.8842004371852636`*^9, 
+   3.8842004508350425`*^9}},
+ CellLabel->"Out[11]=",ExpressionUUID->"8d11721a-776a-4fcb-9346-69c87602ebb0"],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{}, {}, 
@@ -239,6 +273,8 @@ IbL4if8Dq2zLLg==
     FormBox["\"Zeit in sek\"", TraditionalForm]},
   AxesOrigin->{0, 0},
   DisplayFunction->Identity,
+  Epilog->{
+    LineBox[{{0, 1042.15}, {100, 1042.15}}]},
   Frame->{{False, False}, {False, False}},
   FrameLabel->{{None, None}, {None, None}},
   FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
@@ -275,14 +311,14 @@ IbL4if8Dq2zLLg==
    3.8841935326883345`*^9}, {3.8841936067972093`*^9, 3.884193652611437*^9}, {
    3.8841937099016514`*^9, 3.8841937355243835`*^9}, 3.884195038065632*^9, {
    3.8841951206140385`*^9, 3.8841951300676355`*^9}, {3.8841952039158983`*^9, 
-   3.8841952372801447`*^9}},
- CellLabel->
-  "Out[155]=",ExpressionUUID->"0c12f351-07e4-4e8b-aa01-e74ee2fc507d"]
+   3.8841952372521195`*^9}, 3.884200349698042*^9, {3.8842004371852636`*^9, 
+   3.884200450919676*^9}},
+ CellLabel->"Out[12]=",ExpressionUUID->"a5c281c0-b02b-4006-b763-3a4177936e1d"]
 }, Open  ]]
 },
-WindowSize->{1586.25, 624.75},
-WindowMargins->{{Automatic, 136.5}, {72.75, Automatic}},
-FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+WindowSize->{1012.5, 531.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"d8420d20-b3ff-48c6-aad2-1b67b119cb97"
 ]
@@ -298,9 +334,9 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 3924, 102, 260, "Input",ExpressionUUID->"7bbc8f2c-f9ca-4b10-a4e8-62f9a24a5628"],
-Cell[4507, 126, 3649, 76, 294, "Output",ExpressionUUID->"4eb1e338-fe50-41fd-8305-2099e1d2ca76"],
-Cell[8159, 204, 3576, 75, 317, "Output",ExpressionUUID->"0c12f351-07e4-4e8b-aa01-e74ee2fc507d"]
+Cell[580, 22, 5023, 134, 426, "Input",ExpressionUUID->"7bbc8f2c-f9ca-4b10-a4e8-62f9a24a5628"],
+Cell[5606, 158, 3779, 78, 294, "Output",ExpressionUUID->"8d11721a-776a-4fcb-9346-69c87602ebb0"],
+Cell[9388, 238, 3704, 77, 294, "Output",ExpressionUUID->"a5c281c0-b02b-4006-b763-3a4177936e1d"]
 }, Open  ]]
 }
 ]
