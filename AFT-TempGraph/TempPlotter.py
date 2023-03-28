@@ -32,20 +32,20 @@ T = Tinit
 for i in range(round(100/dt) + 1):
     T = T + dT
     Pab = epsilon * sigma * A * (T**4 - 293.15**4)
-    dP = Pzu - Pab
     if (T < curie_temp):
-        dT = (dP*dt*eta_before)/(m*csp)
+        dP = eta_before * Pzu - Pab
     else:
-        dT = (dP*dt*eta_curie)/(m*csp)
+        dP = eta_curie * Pzu - Pab
+    dT = (dP*dt)/(m*csp)
     timecodes.append(dt*i)
     Temperatures.append(T)
     
 #print(timecodes)
 #print(Temperatures)
 
-with open('TempGraph.txt', 'w') as f:
+with open('TempGraph_alt.txt', 'w') as f:
     for i,elem in enumerate(timecodes):
         f.write(str(timecodes[i]) + " " + str(Temperatures[i]) + '\n')    
     
 #plt.plot(timecodes, Temperatures)
-#plt.show()  
+#plt.show()
