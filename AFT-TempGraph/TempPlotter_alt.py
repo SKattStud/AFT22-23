@@ -47,5 +47,5 @@ with open('TempGraph_alt.txt', 'w') as f:
     for i,elem in enumerate(timecodes):
         f.write(str(timecodes[i]) + " " + str(Temperatures[i]) + '\n')    
     
-#plt.plot(timecodes, Temperatures)       # Plot the sine of each x point
-#plt.show()                   # Display the plot    
+#plt.plot(timecodes, Temperatures)
+#plt.show()
