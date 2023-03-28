@@ -43,7 +43,7 @@ for i in range(round(100/dt) + 1):
 #print(timecodes)
 #print(Temperatures)
 
-with open('TempGraph_alt.txt', 'w') as f:
+with open('TempGraph.txt', 'w') as f:
     for i,elem in enumerate(timecodes):
         f.write(str(timecodes[i]) + " " + str(Temperatures[i]) + '\n')    
     
